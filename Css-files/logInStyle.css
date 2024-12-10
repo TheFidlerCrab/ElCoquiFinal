@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+    font-weight: 700;
+}
+
+
+body {
+    background-image: url(/images-icons/GG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow:0px 0px 40px 20px grey;
+}
+
+/* Form Title */
+#form-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-field {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.icons {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.fields {
+    width: 100%;
+    padding: 10px 40px 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.fields:focus {
+    border-color: #025513;
+}
+
+
+.buttons-main {
+    background-color: #025513;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.buttons-main:hover {
+    background-color: #02310b;
+    
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.button-box {
+    margin-top: 20px;
+}
+
+#info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+
+.sign-up-only {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    #form-title {
+        font-size: 20px;
+    }
+
+    .fields {
+        font-size: 14px;
+    }
+
+    .buttons-main {
+        font-size: 14px;
+    }
+}

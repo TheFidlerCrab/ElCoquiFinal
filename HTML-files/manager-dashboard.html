@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="/Css-files/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <h1>Manager Dashboard</h1>
+            <nav class="nav-bar">
+                <a href="#orders" class="nav-link">Orders</a>
+                <a href="#scheduling" class="nav-link">Scheduling</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section id="orders" class="section">
+                <h2>Orders</h2>
+                <div id="receipt-list"></div>
+            </section>
+            <section id="scheduling" class="section">
+                <h2>Employee Scheduling</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gavin Fidler</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Taylor</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>Gerald Puder</td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="save-schedule-btn" class="save-button">Save Schedule</button>
+            </section>
+        </main>
+    </div>
+    <script src="/Script-files/checkScript.js"></script>
+    <script src="/Script-files/dashboard.js"></script>
+</body>
+</html>

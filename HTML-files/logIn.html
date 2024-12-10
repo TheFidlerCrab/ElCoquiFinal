@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css-files/logInStyle.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="sign-in">
+            <div class="sign-form">
+                <h2 class="pingus" id="form-title">Manager Log In</h2>
+                <div class="form-field">
+                    <img class="icons" src="/images-icons/userIcon.png">
+                    <input class="fields" id="user-field" type="text" placeholder="Username" required>
+                </div>
+                <br>
+                <div class="form-field sign-up-only">
+                    <img class="sign-up icons" style="display: none;" src="/images-icons/emailIcon.png">
+                    <input class="fields sign-up" id="email-field" type="text" placeholder="Email" required>
+                </div>
+                <br>
+                <div class="form-field">
+                    <img class="icons" src="/images-icons/passIcon.png">
+                    <input class="fields" id="pass-field" type="password" placeholder="Password" required>
+                </div>
+                <br>
+            </div>
+            <div class="button-box">
+                <button class="buttons-main" id="sign-in-btn" onclick="signIn()">Sign In!</button>
+            </div>
+        </form>
+    </div>
+    <script src="/Script-files/checkScript.js"></script> 
+</body>
+</html>
